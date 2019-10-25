@@ -5,63 +5,27 @@
         <div class="border"></div>
       </div>
 
+      <SkillsCourses />
+    <hr>
+    <SkillsArticles />
           
     </section>
 </template>
 
 <script>
 
+import SkillsArticles from "./SkillsArticles.vue";
+import SkillsCourses from "./SkillsCourses.vue";
 
 export default {
   name: "Learn",
   components: {
-    
+    SkillsArticles,
+    SkillsCourses
   },
   data() {
     return {
-      works: [
-        {
-          title: "Yabbu", 
-          position: "Frontend Developer - Amsterdam, Netherlands", 
-          from:  new Date(2019, 6, 1), 
-          to: "now",
-          description: "Yabbu is a meeting management startup. My main responsibilities are to translate AdobeXD mockups to new front end features using Angular.js and vue.js, estimate time for each feature, map a timeline for the frontend releases and more. ", 
-          projects: [],
-          technologies: "REST api, axios, HTML5, CSS3, SASS, angular.js, vue.js, git, gitkraken"
-        }, 
-
-        {
-          title: "UBITECH Ltd", 
-          position: "UX engineer - Athens, GR", 
-          from:  new Date(2018, 6, 6), 
-          to: new Date(2019, 6, 5),
-          description: "My role is to write front-end components in various languages (depending on the project) as well as design user interfaces for the company's projects. ", 
-          projects: [],
-          technologies: "Angular 2+, Vue.js, JavaScript, TypeScript, Thymeleaf, HTML5, CSS3"
-        }, 
-
-      {
-          title: "Foundation for Research and Technology - (ICS - FORTH)", 
-          position: "R&D - UI/UX engineer - Heraklion, GR", 
-          from: new Date(2015, 6, 6), 
-          to: new Date(2018, 6, 5),
-          description: "Researcher and developer in Ambient Intelligent environments. Outcomes from my work in FORTH are:",
-          projects: [{
-            name: "UInify.", description: " Developed with MEAN (Mongo.DB, Express.js, Angular 6, Node.js) stack to build a full stack application which acted as a studio for composing flexible web applications in real-time and aggregate all the individual UIs of an intelligent environment by introducing new rich user interface compositions."
-          },
-          {
-            name: "Beantable.", description: "Co-develop an augmented interactive table with multiple games for the Heraklion Public Library of Crete. Used C# and WPF to implement a launcher for the application and re-design various games (e.g. puzzle, classic memory games)."
-          },
-          {
-            name: "Arkadi Monastery.", description: "Re-design and develop a mobile application for the Arkadi Museum in Rethimni. Used Actionscript and Adobe Flash Builder to implement a cross-platform application for both Android and iOS."
-          },
-          {
-            name: "Info kiosk.", description: "Co-developed an info kiosk for the Archeological Museum of Crete, which provided information for the Minoan Culture. Developed in C# and WPF the Architecture section and some Utilities."
-          }
-          ],
-          technologies: "Angular 2+, MEAN stack, WPF, C#, Actionscript, Typescript, Javacript, Node.js, HTML5, CSS3"
-        }
-      ]
+     
     };
   }
 };
