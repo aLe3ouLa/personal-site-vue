@@ -73,7 +73,9 @@ export default {
                 "https://dev.to/ale3oula/the-array-iterators-cheatsheet-javascript-2h8e"
             },
           ]
-        }
+        },
+        
+        
       ]
     };
   }

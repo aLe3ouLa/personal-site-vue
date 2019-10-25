@@ -28,6 +28,24 @@ export default {
     return {
       portfolios: [
         {
+          title: "Yabbu (2019)", 
+          image: require("../../../assets/yabbu.png"),
+          position: "Tjelp/Yabbu", 
+          description: "Develop features in angular.js and vue.js", 
+          links: [
+            {
+              "name": "Website", "link": "https://app.yabbu.com"
+            }
+          ],
+          technologies: [{
+            name: "Vue.js", 
+            icon: "fab fa-vuejs"
+          },{
+            name: "Angular.js", 
+            icon: "fab fa-angular"
+          }]
+        },
+        {
           title: "CV (2019)", 
           image: require("../../../assets/cv.png"),
           position: "Side Project", 

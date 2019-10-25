@@ -7,8 +7,8 @@
             I’m excited about learning new skills as well as improving my current.
             I graduated with a M.Sc. in Information Systems and HCI from
             <a href="https://www.csd.uoc.gr/">University of Crete</a>.
-            I'm currently working as a UX Engineer in
-            <a href="https://www.ubitech.eu/">UBITECH</a>.
+            I'm currently working as a Frontend developer in
+            <a href="https://www.yabbu.com/">Yabbu</a>.
           </div>
           <div class="header_buttons">
             <router-link class="btn btn-seemore" to="/portfolio">Let's see some work!</router-link>
@@ -49,7 +49,7 @@ export default {
   }
   
   .btn-portfolio:hover {
-    background-color: #8496b0;
+    background-color: #f39c12;
     color: #fff;
   }
   

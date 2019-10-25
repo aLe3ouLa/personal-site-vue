@@ -7,6 +7,7 @@ import Experience from "./components/Sections/Experience/Experience.vue";
 import Portfolio from "./components/Sections/Portfolio/Portfolio.vue";
 import Contact from "./components/Sections/Contact.vue";
 import Education from "./components/Sections/Education/Education.vue";
+import Learn from "./components/Sections/Learn/Learn.vue";
 
 Vue.use(Router);
 
@@ -41,6 +42,11 @@ export default new Router({
       path: "/education",
       name: "Education",
       component: Education
+    },
+    {
+      path: "/learn",
+      name: "Learn",
+      component: Learn
     }
   ]
 });

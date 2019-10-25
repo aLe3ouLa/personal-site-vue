@@ -26,6 +26,9 @@
           <router-link class="nav-link" to="/experience">Experience</router-link>
         </li>
         <li class="nav-item">
+          <router-link class="nav-link" to="/learn">Learn</router-link>
+        </li>
+        <li class="nav-item">
           <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
         </li>
         <li class="nav-item">

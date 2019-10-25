@@ -162,8 +162,8 @@ export default {
 }
 
 .btn-black {
-  color: #333;
-  border: 2px solid #333;
+  color: #f39c12;
+  border: 2px solid #f39c12;
   padding: 0.5rem 1rem;
   font-weight: bold;
   font-size: 1.2rem;
@@ -172,8 +172,8 @@ export default {
 
 .btn-black:hover {
   color: #fff;
-  border: 2px solid rgb(136, 132, 176);
-  background-color: rgb(136, 132, 176);
+  border: 2px solid #f39c12;
+  background-color: #f39c12;
 }
 
 @media only screen and (max-width: 726px) {

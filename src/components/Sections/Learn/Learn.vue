@@ -1,28 +1,21 @@
 <template>
-    <div class="experience">
+    <section class="learn">
      <div class="page-title">
-        <h2>Experience</h2>
+        <h2>Learn</h2>
         <div class="border"></div>
       </div>
 
-      <section>
-        <template v-for="(work, index) in works">
-        <ExperienceCard  :work="work" :key="index" />
-      </template>
           
-      </section>
-    
-</div>
+    </section>
 </template>
 
 <script>
 
-import ExperienceCard from './ExperienceCard.vue'
 
 export default {
-  name: "Experience",
+  name: "Learn",
   components: {
-    ExperienceCard
+    
   },
   data() {
     return {
