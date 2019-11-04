@@ -13,7 +13,7 @@
         <strong>simple</strong>,
         <strong>clean</strong> and
         <strong>creative</strong> user interfaces using the latest web technologies.
-        I specialize in JavaScript and have professional experience working with Angular 2+.
+        I specialize in JavaScript and have professional experience working with Angular 2+, angular.js and vue.js.
         <br>Some skills that I acquired through my academic and professional (until now!) career are:
         <br>
         <br>
@@ -51,6 +51,12 @@ export default {
         {
           name: "Angular 2+",
           link: "https://angular.io/",
+          icon: "fab fa-angular",
+          color: "angular"
+        },
+        {
+          name: "AngularJS",
+          link: "https://angularjs.org/",
           icon: "fab fa-angular",
           color: "angular"
         },

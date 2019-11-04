@@ -33,6 +33,16 @@ export default {
     return {
       articles: [
         {
+          name: "Pass By Value in JavaScript",
+          l: [
+            {
+              icon: "fab fa-dev",
+              link:
+                "https://dev.to/ale3oula/pass-by-value-in-javascript-5gch"
+            },
+          ]
+        },
+        {
           name: "The Quite Nice and Fairly Accurate Introduction to JavaScript Primitive Data Types",
           l: [
             {

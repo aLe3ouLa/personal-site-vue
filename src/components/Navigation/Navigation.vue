@@ -1,70 +1,66 @@
 <template>
   <div class="navigation">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
-    >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" />
     <nav id="sidebar">
       <div class="sidebar-header">
         <router-link class="nav-link" to="/">
-          <img src="../../assets/avatar.png" alt>
+          <img src="../../assets/avatar.png" alt />
         </router-link>
-        <h3>Alexandra Barka</h3>
+        <!-- <h3>Alexandra Barka</h3> -->
       </div>
 
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <router-link class="nav-link" to="/" exact>About</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/skills">Skills</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/education">Education</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/experience">Experience</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/learn">Learn</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/contact">Contact</router-link>
-        </li>
-      </ul>
-      <hr>
-      <div>
-      <ul class="social-media">
-        <li>
-          <a href="https://www.linkedin.com/in/alexandra-barka-57075361/">
-            <span class="fab fa-linkedin"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/aLe3ouLa">
-            <span class="fab fa-github"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://dribbble.com/aLe3andra">
-            <span class="fab fa-dribbble"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/aLe3ouLa">
-            <span class="fab fa-facebook"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/ale3oula/">
-            <span class="fab fa-instagram"></span>
-          </a>
-        </li>
-      </ul>
-    </div>
+      <div class="navigation__list">
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <router-link class="nav-link" to="/" exact>About</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/skills">Skills</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/education">Education</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/experience">Experience</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/learn">Learn</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/contact">Contact</router-link>
+          </li>
+        </ul>
+        <ul class="social-media">
+          <li>
+            <a href="https://www.linkedin.com/in/alexandra-barka-57075361/">
+              <span class="fab fa-linkedin"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/aLe3ouLa">
+              <span class="fab fa-github"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://dribbble.com/aLe3andra">
+              <span class="fab fa-dribbble"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/aLe3ouLa">
+              <span class="fab fa-facebook"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ale3oula/">
+              <span class="fab fa-instagram"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 </template>
@@ -77,24 +73,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.router-link-active {
-  font-weight: bold;
-}
-
-.wrapper {
-  display: flex;
-  /* width: 100%; */
-  align-items: stretch;
-}
 
 #sidebar {
   min-width: 260px;
   max-width: 260px;
   min-height: 100vh;
-  
   max-height: 100%;
   background-color: #202026;
   color: #f39c12;
+  height: 100%;
+}
+
+.navigation__list {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+  height: 60%;
 }
 
 .nav-link {
@@ -102,7 +96,12 @@ export default {
 }
 
 .nav-link:hover {
-  color: #8496b0;
+  color: #eebd6d;
+}
+
+.router-link-active {
+  font-weight: bold;
+  color: #f39c12;
 }
 
 .social-media {
@@ -114,7 +113,7 @@ export default {
   color: #8496b0;
   display: inline-block;
   margin-right: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .social-media li:last-child {
@@ -145,5 +144,4 @@ export default {
 .fa-dribbble:hover {
   color: #ea4c89;
 }
-
 </style>
