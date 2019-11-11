@@ -28,10 +28,25 @@ export default {
     return {
       portfolios: [
         {
+          title: "Video Browser (2019)", 
+          image: require("../../../assets/video-browser.png"),
+          position: "Side Project", 
+          description: "Development of a youtube-like application", 
+          links: [
+            {
+              "name": "Github", "link": "https://github.com/aLe3ouLa/video-browser"
+            }
+          ],
+          technologies: [{
+            name: "Vue.js", 
+            icon: "fab fa-vuej"
+          }]
+        },
+        {
           title: "Yabbu (2019)", 
           image: require("../../../assets/yabbu.png"),
           position: "Tjelp/Yabbu", 
-          description: "Develop features in angular.js and vue.js", 
+          description: "Maintain the site (angular.js) and write new features in vue.js", 
           links: [
             {
               "name": "Website", "link": "https://app.yabbu.com"
@@ -49,7 +64,7 @@ export default {
           title: "CV (2019)", 
           image: require("../../../assets/cv.png"),
           position: "Side Project", 
-          description: "Design and Implement the current site", 
+          description: "Design and Implement the current site in vue.js", 
           links: [
             {
               "name": "Github", "link": "https://github.com/aLe3ouLa/personal-site-vue"
@@ -64,7 +79,7 @@ export default {
           title: "Ticker", 
           image: require("../../../assets/ticker.png"),
           position: "Side Project", 
-          description: "Development", 
+          description: "Development of a jira-like application", 
           links: [
             {
               "name": "Github", "link": "https://github.com/aLe3ouLa/project-tickets"
@@ -76,10 +91,28 @@ export default {
           }]
         },
         {
+          title: "AEGIS (2019)", 
+          image: require("../../../assets/childrescue.png"),
+          position: "UBITECH Ltd.", 
+          description: "Design & Develop Landing page, some features in angular.js", 
+          links: [
+            {
+              "name": "Site", "link": "https://www.aegis-bigdata.eu/partners/"
+            }
+          ],
+          technologies: [{
+            name: "Figma", 
+            icon: "fab fa-figma"
+          },{
+            name: "Angular", 
+            icon: "fab fa-angular"
+          }]
+        },
+        {
           title: "Weather App", 
           image: require("../../../assets/weather.png"),
           position: "Side Project", 
-          description: "Development", 
+          description: "Weather application that the colors adjust the weather", 
           links: [
             {
               "name": "Github", "link": "https://github.com/aLe3ouLa/weather-app"
@@ -114,8 +147,8 @@ export default {
         {
           title: "UINIFY (2018)", 
           image: require("../../../assets/01_Dashboard.png"),
-          position: "Master Thesis", 
-          description: "Design and develop UInify full stack (MEAN) platform", 
+          position: "Master Thesis / ICS-FORTH", 
+          description: "Design and develop UInify, a full stack (MEAN) platform", 
           links: [
             {
               "name": "Presentation", "link": "./Presentation.pdf"
@@ -157,7 +190,7 @@ export default {
           title: "Arkadi Monastery(2016)", 
           image: require("../../../assets/arkadi.png"),
           position: "ICS-FORTH", 
-          description: "Redesign and co-develop features", 
+          description: "Redesign and co-develop features in Actionscript", 
           links: [
             {
               "name": "Play Store", "link": "https://play.google.com/store/apps/details?id=air.gr.forth.ami.arkadi.mobile"
@@ -166,6 +199,39 @@ export default {
           technologies: [{
             name: "Actionscript", 
             icon: "fab fa-adobe"
+          }]
+        }, 
+        {
+          title: "Vikelaia bean table", 
+          image: require("../../../assets/vikailea.png"),
+          position: "ICS-FORTH", 
+          description: "Redesign and co-develop an interactive table in WPF", 
+          links: [
+            {
+              "name": "Installation", "link": "http://ami.ics.forth.gr/installation/vikelaia-municipal-library/"
+            }
+          ],
+          technologies: [{
+            name: "WPF, C#", 
+            icon: "fab fa-cuttlefish"
+          }]
+        },
+        {
+          title: "Info Kiosk", 
+          image: require("../../../assets/infokiosk.png"),
+          position: "ICS-FORTH", 
+          description: "Co-develop a pixel-perfect information kiosk in WPF", 
+          links: [
+            {
+              "name": "Book Chapter", "link": "https://www.researchgate.net/publication/325598092_Digital_Heritage_Technology_at_the_Archaeological_Museum_of_Heraklion"
+            },
+            {
+              "name": "Installation", "link": "http://ami.ics.forth.gr/installation/heraklion-archaeological-museum/"
+            }
+          ],
+          technologies: [{
+            name: "WPF, C#", 
+            icon: "fab fa-cuttlefish"
           }]
         }
       ]
@@ -182,7 +248,7 @@ export default {
 }
 
 .portfolio-cards div{
-  margin: 1rem;
+  margin: .5rem;
 }
 
 .border {

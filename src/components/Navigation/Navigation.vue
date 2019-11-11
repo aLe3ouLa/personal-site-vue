@@ -88,7 +88,7 @@ export default {
   display: flex; 
   flex-direction: column; 
   justify-content: space-between;
-  height: 60%;
+  /* height: 60%; */
 }
 
 .nav-link {
