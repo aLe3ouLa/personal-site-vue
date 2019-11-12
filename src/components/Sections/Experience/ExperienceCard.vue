@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-card">
+  <div class="card experience-card">
       <div class="exp-card-title">{{work.title}}</div>
     <div class="exp-card-position">{{work.position}}</div>
     <div class="exp-card-from">{{work.from | moment("MMMM YYYY")}} - {{work.to | moment("MMMM YYYY")}} ({{work.from | moment("from", work.to, true)}})</div>

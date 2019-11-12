@@ -32,27 +32,40 @@ export default {
           position: "Frontend Developer - Amsterdam, Netherlands", 
           from:  new Date(2019, 6, 1), 
           to: "now",
-          description: "Yabbu is a meeting management startup. My main responsibilities are to translate AdobeXD mockups to new front end features using Angular.js and vue.js, estimate time for each feature, map a timeline for the frontend releases and more. ", 
+          description: "Yabbu is a startup application which acts as a remote meeting management tool that improves results by cancelling the meeting; Maintaining the angular.js part, while migrating to vue.js; Translating pixel-perfect UX designs into code (Vue.js); Designing and organizing the development process, into small steps , including an estimate of how much time it will take from developers to deliver it.", 
           projects: [],
           technologies: "REST api, axios, HTML5, CSS3, SASS, angular.js, vue.js, git, gitkraken"
         }, 
 
         {
           title: "UBITECH Ltd", 
-          position: "UX engineer - Athens, GR", 
+          position: "Frontend Engineer - Athens, GR", 
           from:  new Date(2018, 6, 6), 
           to: new Date(2019, 6, 5),
-          description: "My role is to write front-end components in various languages (depending on the project) as well as design user interfaces for the company's projects. ", 
-          projects: [],
+          description: "Worked as a front-end engineer with a working knowledge of UX design principles. My role was to write front-end components in various languages (depending on the project and clients preferences) as well as design user interfaces and assets for the company's projects. Delivered clean code and pixel-perfect results.", 
+          projects: [
+            {
+            name: "", description: " Implement front-end component for several projects in the company, using vue.js, angular.js, spring boot, HTML5, CSS3, Javascript"
+            },
+            {
+            name: "", description: "Design user interfaces for best user experience"
+            },
+            {
+            name: "DANA", description: "Using agile methodologies to deliver front-end components with Angular 7 best practices, including a timeline, various tables and details depicting huge amount of data for IoT devices. External libraries used were: moment, devextreme "
+            },
+            {
+            name: "ChildRescue", description: "Design with the best UI/UX practises"
+            }
+          ],
           technologies: "Angular 2+, Vue.js, JavaScript, TypeScript, Thymeleaf, HTML5, CSS3"
         }, 
 
       {
           title: "Foundation for Research and Technology - (ICS - FORTH)", 
-          position: "R&D - UI/UX engineer - Heraklion, GR", 
+          position: "R&D - Frontend engineer - Heraklion, GR", 
           from: new Date(2015, 6, 6), 
           to: new Date(2018, 6, 5),
-          description: "Researcher and developer in Ambient Intelligent environments. Outcomes from my work in FORTH are:",
+          description: "Research and Developer engineer in Ambient Intelligent environments with a focus on front-end development on web, mobile and desktop (non-web based) applications. Learned to develop front-end with pixel-perfect results and user-centred designed applications. Outcomes from my work in FORTH are:",
           projects: [{
             name: "UInify.", description: " Developed with MEAN (Mongo.DB, Express.js, Angular 6, Node.js) stack to build a full stack application which acted as a studio for composing flexible web applications in real-time and aggregate all the individual UIs of an intelligent environment by introducing new rich user interface compositions."
           },

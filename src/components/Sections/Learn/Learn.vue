@@ -1,32 +1,32 @@
 <template>
-    <section class="learn">
-     <div class="page-title">
-        <h2>Learn</h2>
-        <div class="border"></div>
-      </div>
+  <section class="learn">
+    <div class="page-title">
+      <h2>Learn</h2>
+      <div class="border"></div>
+    </div>
 
-      <SkillsCourses />
-    <hr>
+    <SkillsCourses />
+    <hr />
+    <LearnBooks />
+    <hr />
     <SkillsArticles />
-          
-    </section>
+  </section>
 </template>
 
 <script>
-
 import SkillsArticles from "./SkillsArticles.vue";
 import SkillsCourses from "./SkillsCourses.vue";
+import LearnBooks from "./LearnBooks.vue";
 
 export default {
   name: "Learn",
   components: {
     SkillsArticles,
-    SkillsCourses
+    SkillsCourses,
+    LearnBooks
   },
   data() {
-    return {
-     
-    };
+    return {};
   }
 };
 </script>
