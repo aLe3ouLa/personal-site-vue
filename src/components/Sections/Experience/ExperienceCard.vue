@@ -43,7 +43,7 @@ export default {
     text-align: left;
     text-justify: center;
     border-top: 5px solid #f39c12;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.05);
     color: #333;
 }
 
@@ -54,6 +54,7 @@ export default {
 
 .exp-card-position, .exp-card-from {
     color: #f39c12;
+    font-weight: 600;
 }
 
 .projects {

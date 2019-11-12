@@ -40,6 +40,10 @@ export default {
   color: #fff;
 }
 
+.header__post--text h4{
+  font-weight: 600;
+}
+
 .btn-seemore {
   background-color: #fff;
   border: 2px solid #f39c12;

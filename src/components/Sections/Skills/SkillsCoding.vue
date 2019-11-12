@@ -36,6 +36,18 @@ export default {
   data() {
     return {
       codingSkills: [
+         {
+          name: "Vue.js",
+          link: "https://vuejs.org/",
+          icon: "fab fa-vuejs",
+          color: "vue"
+        },
+        {
+          name: "Angular 2+",
+          link: "https://angular.io/",
+          icon: "fab fa-angular",
+          color: "angular"
+        },
         {
           name: "HTML5",
           link: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
@@ -49,23 +61,12 @@ export default {
           color: "css3"
         },
         {
-          name: "Angular 2+",
-          link: "https://angular.io/",
-          icon: "fab fa-angular",
-          color: "angular"
-        },
-        {
           name: "AngularJS",
           link: "https://angularjs.org/",
           icon: "fab fa-angular",
           color: "angular"
         },
-        {
-          name: "Vue.js",
-          link: "https://vuejs.org/",
-          icon: "fab fa-vuejs",
-          color: "vue"
-        },
+       
         {
           name: "Bootstrap 4",
           link: "https://getbootstrap.com/",

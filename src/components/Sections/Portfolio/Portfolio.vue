@@ -39,7 +39,7 @@ export default {
           ],
           technologies: [{
             name: "Vue.js", 
-            icon: "fab fa-vuej"
+            icon: "fab fa-vuejs"
           }]
         },
         {

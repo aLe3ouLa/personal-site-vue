@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-card">
+  <div class="card experience-card">
     <div class="row">
       <div class="col">
         <img v-bind:src="work.image" alt="Work Image" width="80">
