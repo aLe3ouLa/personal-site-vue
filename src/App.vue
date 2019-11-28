@@ -25,11 +25,16 @@ export default {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
 #app {
-  font-family: "Montserrat", "Avenir", Helvetica, Arial, sans-serif;
+  
+  font-family: 'Poppins', "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

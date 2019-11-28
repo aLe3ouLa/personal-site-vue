@@ -6,6 +6,28 @@
         <div class="border"></div>
       </div>
 
+              <div class="info">
+      <div class="checklist">
+        <h3>What I like to do 😊</h3>
+        <ul class="likes">
+          <li>Work with creative developers</li>
+          <li>Work with creative designers</li>
+          <li>Transform awesome ideas to applications</li>
+          <li>Learn more about technology / programming / JS ❤️</li>
+        </ul>
+      </div>
+      <div class="checklist">
+        <h3>What I can't help you with 😔</h3>
+        <ul class="dislikes">
+          <li>Work with old technologies (e.g., jquery)</li>
+          <li>Develop sites that look'n'feel cheap</li>
+          <li>Dress up before coding</li>
+          <li>Commute for 45min+ before coding</li>
+        </ul>
+      </div>  
+    </div> 
+
+  <hr>
       <div class="skill-section">
         I focus on
         <strong>front-end development</strong> of awesome web and mobile applications.
@@ -25,6 +47,7 @@
             <a v-bind:href="skill.link">{{skill.name}}</a>
           </span>
         </div>
+  
       </div>
     </section>
   </div>
@@ -153,5 +176,25 @@ a {
 
 .node {
   color: #68a063;
+}
+
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.checklist h3 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.checklist ul {
+  text-align: left;
+}
+
+.checklist ul li {
+  font-size: .9rem;
 }
 </style>

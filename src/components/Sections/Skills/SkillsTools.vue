@@ -17,13 +17,13 @@
         </span>
         <br>
         <strong>Design tools:</strong>
-        <span v-for="(skill, idd) in designTools" >
+        <span v-for="(skill, idd)  in designTools" :key="idd">
           &nbsp;&nbsp;&bull;&nbsp;
           <a v-bind:href="skill.link">{{skill.name}}</a>
         </span>
         <br>
         <strong>OS:</strong>
-        <span v-for="(skill, idx) in OS">
+        <span v-for="(skill, idx) in OS" :key="idx">
           &nbsp;&nbsp;&bull;&nbsp;
           <a v-bind:href="skill.link">{{skill.name}}</a>
         </span>
@@ -41,8 +41,10 @@ export default {
     return {
       codeTools: [
         { name: "Visual Studio Code", link: "https://code.visualstudio.com/" },
+        { name: "Atom", link: "https://atom.io/" },
         { name: "Intellij", link: "https://www.jetbrains.com/idea/" },
-        { name: "Notepad++", link: "https://notepad-plus-plus.org/" }
+        { name: "Notepad++", link: "https://notepad-plus-plus.org/" },
+        { name: "GitKraken", link: "https://gitkraken.com" }
       ],
       designTools: [
         { name: "Figma", link: "https://www.figma.com/" },

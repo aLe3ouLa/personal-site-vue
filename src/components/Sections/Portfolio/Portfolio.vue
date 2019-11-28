@@ -28,6 +28,21 @@ export default {
     return {
       portfolios: [
         {
+          title: "Autosuggest  (2019)", 
+          image: require("../../../assets/autosuggest.png"),
+          position: "Side Project", 
+          description: "Technical Assignment that acts as suggestion system", 
+          links: [
+            {
+              "name": "Codepen", "link": "https://codepen.io/ale3oula-the-styleful/pen/LYYXLzm"
+            }
+          ],
+          technologies: [{
+            name: "Vue.js", 
+            icon: "fab fa-vuejs"
+          }]
+        },
+        {
           title: "Video Browser (2019)", 
           image: require("../../../assets/video-browser.png"),
           position: "Side Project", 
