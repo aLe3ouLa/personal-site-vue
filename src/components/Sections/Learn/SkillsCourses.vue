@@ -1,24 +1,20 @@
 <template>
-  <div class="skills">
-    <section>
+    <section class="skills">
       <div class="page-title">
-        <h2>How I learn?</h2>
+        <h4>How I learn?</h4>
         <div class="border"></div>
       </div>
 
       <div class="skill-section">
-        One of main traits of most developers are continuously leveling up their skills. Online courses, great articles and guides are only some ways.
-        <br>There are some of my favorite courses:
-        <br>
-        <br>
+        <p>One of main traits of most developers are continuously leveling up their skills. Online courses, great articles and guides are only some ways.</p>
+        <p>There are some of my favorite courses that i've been certified with:</p>
         <ul class="container-fluid">
-          <li v-for="(skill, index) in favoriteCourses" :key="index">
+          <li v-for="(skill, index) in favoriteCourses" v-bind:key="index">
             <a v-bind:href="skill.link">{{skill.name}} - <strong>By</strong> {{skill.author}} </a>
           </li>
         </ul>
       </div>
     </section>
-  </div>
 </template>
 
 <script>
@@ -29,14 +25,9 @@ export default {
     return {
       favoriteCourses: [
         {
-          name: "Angular 8 (formerly Angular 2) - The Complete Guide",
-          author: "Maximilian Schwarzmüller",
-          link: "https://www.udemy.com/the-complete-guide-to-angular-2/"
-        },
-        {
-          name: "Vue JS Essentials with Vuex and Vue Router",
-          author: "Stephen Grider",
-          link: "https://www.udemy.com/vue-js-course/"
+          name: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
+          author: "Jonas Schmedtmann",
+          link: "https://www.udemy.com/course/advanced-css-and-sass/"
         },
         {
           name: "The Complete 2019 Web Development Bootcamp",
@@ -44,9 +35,19 @@ export default {
           link: "https://www.udemy.com/course/the-complete-web-development-bootcamp/"
         },
         {
-          name: "The Complete Node.js Developer Course (3rd Edition)",
-          author: " Andrew Mead, Rob Percival",
-          link: "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/"
+          name: "Angular 8 (formerly Angular 2) - The Complete Guide",
+          author: "Maximilian Schwarzmüller",
+          link: "https://www.udemy.com/the-complete-guide-to-angular-2/"
+        },
+        {
+          name: "Angular & NodeJS - The MEAN Stack Guide",
+          author: "Maximilian Schwarzmüller",
+          link: "https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/"
+        },
+        {
+          name: "Vue JS Essentials with Vuex and Vue Router",
+          author: "Stephen Grider",
+          link: "https://www.udemy.com/vue-js-course/"
         }
       ]
     };

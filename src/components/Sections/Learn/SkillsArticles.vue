@@ -1,13 +1,12 @@
 <template>
-  <div class="skills">
-    <section>
+    <section class="skills">
       <div class="page-title">
-        <h2>Articles I wrote</h2>
+        <h4>Articles I wrote</h4>
         <div class="border"></div>
       </div>
 
       <div class="skill-section">
-        I tried to write some articles to explain some front-end concepts! This gave me the opportunity to research more and understand better key programming concepts! <br>
+        <p>They say that you truly understand something if you can teach it. So, in my free time I write articles to explain basic concepts about HTML, CSS or Javascript!</p>
         <div class="coding-skills">
           <div
             v-for="(article, index) in articles"
@@ -23,7 +22,6 @@
         </div>
       </div>
     </section>
-  </div>
 </template>
 
 <script>
@@ -33,6 +31,15 @@ export default {
     return {
       articles: [
         {
+          name: "Flexbox 101: Terminology & Basics",
+          l: [
+            {
+              icon: "fab fa-dev",
+              link:
+                "https://dev.to/ale3oula/flexbox-101-terminology-basics-18hb"
+            },
+          ]
+        },{
           name: "Pass By Value in JavaScript",
           l: [
             {

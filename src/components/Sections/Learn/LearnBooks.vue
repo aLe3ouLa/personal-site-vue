@@ -1,15 +1,12 @@
 <template>
-  <div class="skills">
-    <section>
+    <section class="skills">
       <div class="page-title">
-        <h2>Favorite books and articles?</h2>
+        <h4>Favorite books and articles?</h4>
         <div class="border"></div>
       </div>
 
       <div class="skill-section">
-        My favorite tech books so far are:
-        <br>
-        <br>
+        <p>Favorite tech books:</p>
         <ul class="container-fluid">
           <li v-for="(skill, index) in favoriteCourses" :key="index">
             <a v-bind:href="skill.link">{{skill.name}} - <strong>By</strong> {{skill.author}} </a>
@@ -17,7 +14,6 @@
         </ul>
       </div>
     </section>
-  </div>
 </template>
 
 <script>
