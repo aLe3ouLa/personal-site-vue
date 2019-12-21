@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <NavigationMobile class="navigation-mobile"/>
-    <div class="row">
-      <Navigation class="col-xs-2 navigation-desktop"/>
-      <router-view class="col"/>
+    <div class="container-app">
+      <Navigation class="navigation navigation-desktop"/>
+      <router-view class="content"/>
     </div>
   </div>
 </template>
@@ -30,6 +30,19 @@ export default {
 
 html {
   box-sizing: border-box;
+}
+
+.container-app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  flex: 0 0 20%;
+}
+
+.content {
+  flex: 1;
 }
 
 #app {

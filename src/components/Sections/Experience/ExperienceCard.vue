@@ -34,7 +34,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+$primary-color: #08fdd8;
 .experience-card {
    width: 95%;
     margin: .5rem;
@@ -42,18 +44,18 @@ export default {
     font-size: 1.1rem;
     text-align: left;
     text-justify: center;
-    border-top: 5px solid #f39c12;
+    border-top: 5px solid $primary-color;
     background-color: rgba(0,0,0,0.05);
     color: #333;
 }
 
 .exp-card-title {
     font-weight: bold;
-    color: #333;
+    color: #05947e;
 }
 
 .exp-card-position, .exp-card-from {
-    color: #f39c12;
+    color: #333;
     font-weight: 600;
 }
 

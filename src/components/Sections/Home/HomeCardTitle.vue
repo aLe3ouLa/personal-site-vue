@@ -48,8 +48,8 @@ export default {
 }
 
 .name {
-    background: #f39c12;
-    color: #fff;
+    background: #08fdd8;
+    color: #333;
     padding: 0 10px;
     margin-left: 7px;
 }

@@ -1,5 +1,4 @@
 <template>
-  <div class="skills">
     <section>
       <div class="page-title">
         <h2>What I Use?</h2>
@@ -30,7 +29,6 @@
         <br>
       </div>
     </section>
-  </div>
 </template>
 
 <script>
@@ -56,7 +54,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+$primary-color: #05947e;
 .page-title {
   margin: 1rem 0;
   text-align: left;
@@ -65,8 +65,7 @@ export default {
 
 .border {
   width: 55px;
-  height: 8px;
-  background: #f39c12;
+  height: 2px;
   border-radius: 20px;
   margin-top: 8px;
 }
@@ -76,6 +75,6 @@ export default {
 }
 
 a {
-  color:#f39c12;
+  color:$primary-color;
 }
 </style>

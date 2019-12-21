@@ -1,147 +1,148 @@
 <template>
   <div class="navigation">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" />
-    <nav id="sidebar">
-      <div class="sidebar-header">
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar__header">
         <router-link class="nav-link" to="/">
           <img src="../../assets/avatar.png" alt />
         </router-link>
-        <!-- <h3>Alexandra Barka</h3> -->
+        <h4>Alexandra Barka</h4>
+        <span class="sidebar__header--tag">Frontend Developer, UI/UX Designer</span>
       </div>
 
       <div class="navigation__list">
-        <ul class="navbar-nav" >
-          <li class="nav-item">
-            <router-link class="nav-link" to="/" exact>About</router-link>
+        <ul class="navigation__list--nav">
+          <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/" exact>
+              <i class="navigation__list--icon fa fa-user"></i>About
+            </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/skills">Skills</router-link>
+          <!-- <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/blog">
+              <i class="navigation__list--icon fa fa-object-group"></i>Blog
+            </router-link>
+          </li> -->
+          <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/skills">
+              <i class="navigation__list--icon fa fa-object-group"></i>Skills
+            </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/education">Education</router-link>
+          <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/experience">
+              <i class="navigation__list--icon fa fa-briefcase"></i>Experience
+            </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/experience">Experience</router-link>
+          <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/design">
+              <i class="navigation__list--icon fa fa-paint-brush"></i>UI/UX Design
+            </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/learn">Learn</router-link>
+          <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/learn">
+              <i class="navigation__list--icon fa fa-book"></i>Learn
+            </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
+          <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/portfolio">
+              <i class="navigation__list--icon fa fa-cubes"></i> Portfolio
+            </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/contact">Contact</router-link>
-          </li>
-        </ul>
-        <ul class="social-media">
-          <li>
-            <a href="https://www.linkedin.com/in/alexandra-barka-57075361/">
-              <span class="fab fa-linkedin"></span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/aLe3ouLa">
-              <span class="fab fa-github"></span>
-            </a>
-          </li>
-          <li>
-            <a href="https://dribbble.com/aLe3andra">
-              <span class="fab fa-dribbble"></span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/aLe3ouLa">
-              <span class="fab fa-facebook"></span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/ale3.js/">
-              <span class="fab fa-instagram"></span>
-            </a>
+          <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/contact">
+              <i class="navigation__list--icon fa fa-envelope"></i> Contact
+            </router-link>
           </li>
         </ul>
       </div>
+      
+      <SocialMedia></SocialMedia>
     </nav>
   </div>
 </template>
 
 <script>
+
+import SocialMedia from './SocialMedia.vue';
+
 export default {
-  name: "Navigation"
+  name: "Navigation",
+  components: {
+    SocialMedia: SocialMedia
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 
-#sidebar {
-  min-width: 260px;
-  max-width: 260px;
+$primary-color: #08fdd8;
+$navigation-color: #202026;
+
+.sidebar {
   min-height: 100vh;
-  max-height: 100%;
-  background-color: #202026;
-  color: #f39c12;
-  height: 100%;
+  min-width: 250px;
+  background-color: $navigation-color;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  &__header {
+    &--tag {
+      color: #fff;
+      font-size: .6rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
 }
 
 .navigation__list {
   display: flex; 
   flex-direction: column; 
   justify-content: space-between;
-  /* height: 60%; */
+  &--nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  &--item {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &--item:hover {
+    .navigation__list--link {
+      color: $primary-color;
+      text-decoration: none;
+    }
+
+    .navigation__list--icon {
+      color: $primary-color;
+    }
+  }
+
+  &--icon {
+    margin-right: 1rem;
+    min-width: 1.5rem;
+  }
+
+  &--link {
+    color: #fff;
+  }
 }
 
-.nav-link {
-  color: #fff;
-}
-
-.nav-link:hover {
-  color: #eebd6d;
-}
 
 .router-link-active {
   font-weight: bold;
-  color: #f39c12;
+  color: $primary-color;
 }
 
-.social-media {
-  list-style-type: none;
-}
-
-.social-media li {
-  font-family: FontAwesome;
-  color: #8496b0;
-  display: inline-block;
-  margin-right: 1rem;
-  font-size: 1.1rem;
-}
-
-.social-media li:last-child {
-  margin-right: 0;
-}
-
-.social-media li a {
-  color: #8496b0;
-  text-decoration: none;
-}
-
-.fa-facebook:hover {
-  color: #3b5998;
-}
-
-.fa-instagram:hover {
-  color: #517fa4;
-}
-
-.fa-linkedin:hover {
-  color: #0077b5;
-}
-
-.fa-github:hover {
-  color: #bd081c;
-}
-
-.fa-dribbble:hover {
-  color: #ea4c89;
-}
 </style>

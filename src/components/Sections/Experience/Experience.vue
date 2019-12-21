@@ -1,18 +1,14 @@
 <template>
-    <div class="experience">
-     <div class="page-title">
+      <section class="section-experience">
+        <div class="page-title">
         <h2>Experience</h2>
         <div class="border"></div>
       </div>
-
-      <section>
         <template v-for="(work, index) in works">
         <ExperienceCard  :work="work" :key="index" />
       </template>
           
       </section>
-    
-</div>
 </template>
 
 <script>
@@ -88,6 +84,10 @@ export default {
 </script>
 
 <style scoped>
+
+.section-experience {
+  padding: 2rem;
+}
 .page-title {
   margin: 1rem 0;
   text-align: left;
@@ -96,8 +96,7 @@ export default {
 
 .border {
   width: 55px;
-  height: 8px;
-  background: #f39c12;
+  height: 2px;
   border-radius: 20px;
   margin-top: 8px;
 }

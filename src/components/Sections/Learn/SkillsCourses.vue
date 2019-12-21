@@ -1,8 +1,7 @@
 <template>
-    <section class="skills">
+    <section class="section-skills">
       <div class="page-title">
-        <h4>How I learn?</h4>
-        <div class="border"></div>
+        <h4>Certificates &amp; Favorite courses</h4>
       </div>
 
       <div class="skill-section">
@@ -10,7 +9,7 @@
         <p>There are some of my favorite courses that i've been certified with:</p>
         <ul class="container-fluid">
           <li v-for="(skill, index) in favoriteCourses" v-bind:key="index">
-            <a v-bind:href="skill.link">{{skill.name}} - <strong>By</strong> {{skill.author}} </a>
+            <a v-bind:href="skill.link">{{skill.name}}</a> - <strong>By</strong> {{skill.author}} 
           </li>
         </ul>
       </div>
@@ -56,25 +55,19 @@ export default {
 </script>
 
 <style scoped>
+
 .page-title {
   margin: 1rem 0;
   text-align: left;
   font-size: 30px;
 }
 
-.border {
-  width: 55px;
-  height: 8px;
-  background: #f39c12;
-  border-radius: 20px;
-  margin-top: 8px;
-}
 
 .skill-section {
   text-align: left;
 }
 
 a {
-  color:#f39c12;
+  color:#05947e;
 }
 </style>

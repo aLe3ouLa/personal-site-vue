@@ -1,8 +1,7 @@
 <template>
     <section class="skills">
       <div class="page-title">
-        <h4>Favorite books and articles?</h4>
-        <div class="border"></div>
+        <h4>Books &amp; articles</h4>
       </div>
 
       <div class="skill-section">
@@ -49,7 +48,7 @@ export default {
 .border {
   width: 55px;
   height: 8px;
-  background: #f39c12;
+  background: #08fdd8;
   border-radius: 20px;
   margin-top: 8px;
 }
@@ -59,6 +58,6 @@ export default {
 }
 
 a {
-  color:#f39c12;
+  color:#05947e;
 }
 </style>

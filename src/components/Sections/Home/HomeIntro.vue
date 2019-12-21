@@ -27,7 +27,9 @@ export default {
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+
+$primary-color: #08fdd8;
 .header__post--text {
   width: 95%;
   margin: 0.5rem;
@@ -35,7 +37,7 @@ export default {
   font-size: 1.1rem;
   text-align: left;
   text-justify: center;
-  border-top: 5px solid #f39c12;
+  border-top: 5px solid $primary-color;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
@@ -45,33 +47,33 @@ export default {
 }
 
 .btn-seemore {
-  background-color: #fff;
-  border: 2px solid #f39c12;
+  color: #333;
+  border: 2px solid $primary-color;
 }
 
 .btn-cv {
-  background-color: #f39c12;
-  border: 2px solid #f39c12;
-  color: #fff;
+  background-color: $primary-color;
+  border: 2px solid $primary-color;
+  color: #333;
 }
 
 .btn-portfolio:hover {
-  background-color: #f39c12;
-  color: #fff;
+  background-color: $primary-color;
+  color: #333;
 }
 
 .btn-seemore:hover {
-  background-color: #f39c12;
-  color: rgb(136, 132, 176);
+  background-color: $primary-color;
+  color: #333;
 }
 
 .btn-cv:hover {
   background-color: #fff;
-  color: #8496b0;
+  color: #333;
 }
 
 a {
-  color: #f39c12;
+  color: $primary-color;
   font-weight: bold;
 }
 

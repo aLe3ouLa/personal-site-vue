@@ -1,26 +1,19 @@
 <template>
-  <section class="section-learn">
+  <section class="section-blog">
     <div class="page-title">
-      <h2>Learn</h2>
+      <h2>Blog</h2>
       <div class="border"></div>
     </div>
 
-    <SkillsCourses />
-    <hr />
-    <LearnBooks />
   </section>
 </template>
 
 <script>
 
-import SkillsCourses from "./SkillsCourses.vue";
-import LearnBooks from "./LearnBooks.vue";
 
 export default {
-  name: "Learn",
+  name: "Blog",
   components: {
-    SkillsCourses,
-    LearnBooks
   },
   data() {
     return {};
@@ -30,8 +23,8 @@ export default {
 
 <style scoped>
 
-.section-learn {
-  padding: 2rem;
+.section-blog {
+    padding: 2rem;
 }
 .page-title {
   margin: 1rem 0;

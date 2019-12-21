@@ -9,7 +9,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
       <div class="navbar-brand">
         <router-link class="nav-link" to="/">
-         <h3>Alexandra Barka</h3>
+         <h3 class="navbar-brand--name">Alexandra Barka</h3>
         </router-link>
       </div>
 
@@ -26,10 +26,10 @@
           <router-link class="nav-link" to="/skills">Skills</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/education">Education</router-link>
+          <router-link class="nav-link" to="/experience">Experience</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/experience">Experience</router-link>
+          <router-link class="nav-link" to="/design">UI/UX Design</router-link>
         </li>
         <li class="nav-item">
           <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
@@ -53,6 +53,10 @@ export default {
 <style scoped>
 .router-link-active {
   font-weight: bold;
+}
+
+.navbar-brand--name {
+  font-size: 1.1rem;
 }
 
 .wrapper {

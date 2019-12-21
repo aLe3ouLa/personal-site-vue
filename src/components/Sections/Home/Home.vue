@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <section class="home">
     <HomeCard/>
     <HomeIntro/>
-  </div>
+  </section>
 </template>
 <script>
 import HomeCard from "./HomeCard";
@@ -17,4 +17,8 @@ export default {
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style  scoped></style>
+<style  scoped>
+
+.home{
+  padding: 2rem;
+}</style>

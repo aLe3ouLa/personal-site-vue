@@ -1,58 +1,44 @@
 <template>
-<div class="contact">
-     <div class="page-title">
-        <h2>Contact</h2>
-        <div class="border"></div>
-      </div>
-      
-      <section>
-          <h2>Want to get in touch?</h2>
-          Find me on social media: 
+  <section class="section-contact">
+    <div class="page-title">
+      <h2>Contact</h2>
+      <div class="border"></div>
+    </div>
+    <h3>Want to get in touch?</h3>
+    <p>Find me on social media:</p>
+    <SocialMedia></SocialMedia>
+    <p>
+      or send me an e-mail:
+      <a href="barka.alexandra2@gmail.com">barka.alexandra2@gmail.com</a>
+    </p>
 
-          <ul class="social-media">
-        <li>
-          <a href="https://www.linkedin.com/in/alexandra-barka-57075361/">
-            <span class="fab fa-linkedin"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/aLe3ouLa">
-            <span class="fab fa-github"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://dribbble.com/aLe3andra">
-            <span class="fab fa-dribbble"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/aLe3ouLa">
-            <span class="fab fa-facebook"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/ale3oula/">
-            <span class="fab fa-instagram"></span>
-          </a>
-        </li>
-      </ul>
-      or send me an e-mail: <a href="barka.alexandra2@gmail.com">barka.alexandra2@gmail.com</a>
-      </section>
-</div>
-   
+    <div class="header_buttons">
+      <router-link class="btn btn-seemore" to="/portfolio">Let's see some work!</router-link>
+      <a href="./cv.pdf" class="btn btn-cv" target="_blank">One page CV</a>
+      <a href="./cv_extended.pdf" class="btn btn-cv" target="_blank">Extended CV</a>
+    </div>
+  </section>
 </template>
 
 <script>
+import SocialMedia from "../Navigation/SocialMedia";
 export default {
   name: "Contact",
+  components: {
+    SocialMedia
+  },
   data() {
-    return {
-    };
+    return {};
   }
 };
 </script>
 
 <style scoped>
+
+.section-contact {
+  padding: 2rem;
+}
+
 .page-title {
   margin: 1rem 0;
   text-align: left;
@@ -61,52 +47,58 @@ export default {
 
 .border {
   width: 55px;
-  height: 8px;
-  background: #f39c12;
+  height: 2px;
   border-radius: 20px;
-  margin-top: 8px;
+  margin-top: 6px;
+}
+
+.header_buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0.5rem;
 }
 
 
-.social-media {
-    list-style-type: none;
-  }
-  
-  .social-media li {
-    font-family: FontAwesome;
-    color: #8496b0;
-    display: inline-block;
-    margin-right: 1rem;
-    font-size: 1.8rem;
-  }
-  
-  .social-media li:last-child {
-    margin-right: 0;
-  }
-  
-  .social-media li a {
-    color: #8496b0;
-    text-decoration: none;
-  }
-  
-  .fa-facebook:hover {
-    color: #3b5998;
-  }
-  
-  .fa-instagram:hover {
-    color: #517fa4;
-  }
-  
-  .fa-linkedin:hover {
-    color: #0077b5;
-  }
-  
-  .fa-github:hover {
-    color: #bd081c;
-  }
-  
-  .fa-dribbble:hover {
-    color: #ea4c89;
-  }
+
+.btn-seemore {
+  background-color: #fff;
+  border: 2px solid #08fdd8;
+  color: #333;
+;
+}
+
+.btn-cv {
+  background-color: #08fdd8;
+  border: 2px solid #08fdd8;
+  color: #333;
+}
+
+.btn-portfolio:hover {
+  background-color: #08fdd8;
+  color: #333;
+}
+
+.btn-seemore:hover {
+  background-color: #08fdd8;
+  color: #333;
+}
+
+.btn-cv:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  color: #08fdd8;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  margin-right: 0.2rem;
+}
 
 </style>

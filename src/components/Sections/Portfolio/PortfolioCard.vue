@@ -51,7 +51,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+$primary-color: #08fdd8;
 .card {
   position: relative;
   width: 100%;
@@ -115,12 +117,12 @@ export default {
 
   .btn-black {
     background-color: #fff;
-    border: 2px solid #f39c12;
-    color: #f39c12;
+    border: 2px solid $primary-color;
+    color: #333;
   }
 
   .btn-black:hover {
-    background-color: #f39c12;
-    color: #fff;
+    background-color: $primary-color;
+    color: #333;
   }
 </style>
