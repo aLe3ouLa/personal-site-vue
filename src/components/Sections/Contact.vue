@@ -1,7 +1,15 @@
 <template>
   <section class="section-contact">
     <div class="page-title">
-      <h2>Contact</h2>
+      <h2>
+         <span class="blast" style="opacity: 1;">C</span>
+        <span class="blast" style="opacity: 1;">o</span>
+        <span class="blast" style="opacity: 1;">n</span>
+        <span class="blast" style="opacity: 1;">t</span>
+        <span class="blast" style="opacity: 1;">a</span>
+        <span class="blast" style="opacity: 1;">c</span>
+        <span class="blast" style="opacity: 1;">t</span>
+      </h2>
       <div class="border"></div>
     </div>
     <h3>Want to get in touch?</h3>
@@ -33,7 +41,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+$primary-color: #08fdd8;
 
 .section-contact {
   padding: 2rem;
@@ -43,6 +53,7 @@ export default {
   margin: 1rem 0;
   text-align: left;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .border {
@@ -62,24 +73,24 @@ export default {
 
 .btn-seemore {
   background-color: #fff;
-  border: 2px solid #08fdd8;
+  border: 2px solid $primary-color;
   color: #333;
 ;
 }
 
 .btn-cv {
-  background-color: #08fdd8;
-  border: 2px solid #08fdd8;
+  background-color: $primary-color;
+  border: 2px solid $primary-color;
   color: #333;
 }
 
 .btn-portfolio:hover {
-  background-color: #08fdd8;
+  background-color: $primary-color;
   color: #333;
 }
 
 .btn-seemore:hover {
-  background-color: #08fdd8;
+  background-color: $primary-color;
   color: #333;
 }
 
@@ -89,7 +100,7 @@ export default {
 }
 
 a {
-  color: #08fdd8;
+  color: $primary-color;
   font-weight: bold;
 }
 
@@ -101,4 +112,55 @@ a {
   margin-right: 0.2rem;
 }
 
+
+
+.blast {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.blast:hover {
+    color: $primary-color;
+    animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
 </style>

@@ -17,11 +17,11 @@
               <i class="navigation__list--icon fa fa-user"></i>About
             </router-link>
           </li>
-          <!-- <li class="navigation__list--item">
-            <router-link class="navigation__list--link" to="/blog">
-              <i class="navigation__list--icon fa fa-object-group"></i>Blog
+          <li class="navigation__list--item">
+            <router-link class="navigation__list--link" to="/portfolio">
+              <i class="navigation__list--icon fa fa-cubes"></i>Code
             </router-link>
-          </li> -->
+          </li>
           <li class="navigation__list--item">
             <router-link class="navigation__list--link" to="/skills">
               <i class="navigation__list--icon fa fa-object-group"></i>Skills
@@ -29,12 +29,12 @@
           </li>
           <li class="navigation__list--item">
             <router-link class="navigation__list--link" to="/experience">
-              <i class="navigation__list--icon fa fa-briefcase"></i>Experience
+              <i class="navigation__list--icon fa fa-briefcase"></i>Work
             </router-link>
           </li>
           <li class="navigation__list--item">
             <router-link class="navigation__list--link" to="/design">
-              <i class="navigation__list--icon fa fa-paint-brush"></i>UI/UX Design
+              <i class="navigation__list--icon fa fa-paint-brush"></i>Design
             </router-link>
           </li>
           <li class="navigation__list--item">
@@ -43,13 +43,8 @@
             </router-link>
           </li>
           <li class="navigation__list--item">
-            <router-link class="navigation__list--link" to="/portfolio">
-              <i class="navigation__list--icon fa fa-cubes"></i> Portfolio
-            </router-link>
-          </li>
-          <li class="navigation__list--item">
             <router-link class="navigation__list--link" to="/contact">
-              <i class="navigation__list--icon fa fa-envelope"></i> Contact
+              <i class="navigation__list--icon fa fa-envelope"></i>Contact
             </router-link>
           </li>
         </ul>
@@ -113,9 +108,10 @@ $navigation-color: #202026;
   &--item {
     display: flex;
     align-items: center;
-    padding: .5rem 1.5rem;
+    padding: 0.3rem 0rem;
     color: #fff;
     cursor: pointer;
+    width: 100%;
   }
 
   &--item:hover {

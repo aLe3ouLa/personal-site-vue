@@ -191,6 +191,7 @@ $primary-color: #08fdd8;
   margin: 1rem 0;
   text-align: left;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .border {

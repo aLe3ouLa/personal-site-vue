@@ -1,7 +1,17 @@
 <template>
   <section class="section-portfolio">
     <div class="page-title">
-      <h2>Portfolio</h2>
+      <h2>
+        <span class="blast" style="opacity: 1;">P</span>
+        <span class="blast" style="opacity: 1;">o</span>
+        <span class="blast" style="opacity: 1;">r</span>
+        <span class="blast" style="opacity: 1;">t</span>
+        <span class="blast" style="opacity: 1;">f</span>
+        <span class="blast" style="opacity: 1;">o</span>
+        <span class="blast" style="opacity: 1;">l</span>
+        <span class="blast" style="opacity: 1;">i</span>
+        <span class="blast" style="opacity: 1;">o</span>
+      </h2>
       <div class="border"></div>
     </div>
     <div class="row">
@@ -23,10 +33,50 @@ export default {
   data() {
     return {
       portfolios: [
+         {
+          title: "Blog Article (2019)",
+          image: require("../../../assets/t1.png"),
+          position: "Technical Assignment",
+          description: "Technical Assignment that acts as a blog post",
+          links: [
+            {
+              name: "Github",
+              link: "https://github.com/aLe3ouLa/blog-article"
+            }
+          ],
+          technologies: [
+            {
+              name: "HTML",
+              icon: "fab fa-html5"
+            },
+            {
+              name: "SASS",
+              icon: "fab fa-sass"
+            }
+          ]
+        },
+        {
+          title: "Appointments (2019)",
+          image: require("../../../assets/no-image.png"),
+          position: "Technical Assignment",
+          description: "CRUD app developed with Angular and REST api",
+          links: [
+            {
+              name: "Github",
+              link: "https://github.com/aLe3ouLa/doctor-appointments"
+            }
+          ],
+          technologies: [
+            {
+              name: "Angular",
+              icon: "fab fa-angular"
+            }
+          ]
+        },
         {
           title: "Autosuggest  (2019)",
           image: require("../../../assets/autosuggest.png"),
-          position: "Side Project",
+          position: "Technical Assignment",
           description: "Technical Assignment that acts as suggestion system",
           links: [
             {
@@ -103,12 +153,30 @@ export default {
         {
           title: "Ticker",
           image: require("../../../assets/ticker.png"),
-          position: "Side Project",
-          description: "Development of a jira-like application",
+          position: "Technical Assignment",
+          description: "Development of a CRUD jira-like application with Angular",
           links: [
             {
               name: "Github",
               link: "https://github.com/aLe3ouLa/project-tickets"
+            }
+          ],
+          technologies: [
+            {
+              name: "Angular",
+              icon: "fab fa-angular"
+            }
+          ]
+        },
+        {
+          title: "GroceryHunt(2019)",
+          image: require("../../../assets/GroceryHunt.png"),
+          position: "Technical Assignment",
+          description: "Development of a CRUD shop grocery application with Angular",
+          links: [
+            {
+              name: "Github",
+              link: "https://github.com/aLe3ouLa/groceryhunt"
             }
           ],
           technologies: [
@@ -309,7 +377,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+$primary-color: #08fdd8;
+
 .section-portfolio {
   padding: 2rem;
 }
@@ -318,6 +389,7 @@ export default {
   margin: 1rem 0;
   text-align: left;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .portfolio-cards div, .port-cards {
@@ -329,5 +401,56 @@ export default {
   height: 2px;
   border-radius: 20px;
   margin-top: 6px;
+}
+
+
+.blast {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.blast:hover {
+    color: $primary-color;
+    animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
 }
 </style>

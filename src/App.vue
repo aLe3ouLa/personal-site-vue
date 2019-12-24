@@ -32,6 +32,11 @@ html {
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: #05947e;
+  color: #eee;
+}
+
 .container-app {
   display: flex;
   flex-wrap: wrap;

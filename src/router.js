@@ -6,7 +6,6 @@ import Skills from "./components/Sections/Skills/Skills.vue";
 import Experience from "./components/Sections/Experience/Experience.vue";
 import Portfolio from "./components/Sections/Portfolio/Portfolio.vue";
 import Contact from "./components/Sections/Contact.vue";
-import Blog from "./components/Sections/Blogs/Blog.vue";
 import Learn from "./components/Sections/Learn/Learn.vue";
 import Design from "./components/Sections/Design/Design.vue";
 
@@ -38,11 +37,6 @@ export default new Router({
       path: "/contact",
       name: "Contact",
       component: Contact
-    },
-    {
-      path: "/blog",
-      name: "Blog",
-      component: Blog
     },
     {
       path: "/design",

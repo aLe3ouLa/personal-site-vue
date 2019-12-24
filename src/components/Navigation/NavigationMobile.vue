@@ -23,17 +23,21 @@
           <router-link class="nav-link" to="/" exact>About</router-link>
         </li>
         <li class="nav-item">
+          <router-link class="nav-link" to="/portfolio">Code</router-link>
+        </li>
+        <li class="nav-item">
           <router-link class="nav-link" to="/skills">Skills</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/experience">Experience</router-link>
+          <router-link class="nav-link" to="/experience">Work</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/design">UI/UX Design</router-link>
+          <router-link class="nav-link" to="/design">Design</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
+          <router-link class="nav-link" to="/learn">Learn</router-link>
         </li>
+        
         <li class="nav-item">
           <router-link class="nav-link" to="/contact">Contact</router-link>
         </li>

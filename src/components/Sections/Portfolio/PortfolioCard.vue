@@ -57,7 +57,7 @@ $primary-color: #08fdd8;
 .card {
   position: relative;
   width: 100%;
-  max-width: 300px;
+  max-width: 260px;
   margin: 0;
   margin-bottom: 0.5rem;
   /* padding: 0 1rem; */

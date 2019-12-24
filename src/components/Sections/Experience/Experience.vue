@@ -1,7 +1,23 @@
 <template>
       <section class="section-experience">
         <div class="page-title">
-        <h2>Experience</h2>
+        <h2>
+        <span class="blast" style="opacity: 1;">W</span>
+        <span class="blast" style="opacity: 1;">o</span>
+        <span class="blast" style="opacity: 1;">r</span>
+        <span class="blast" style="opacity: 1;">k</span>
+        <span class="blast" style="opacity: 1;">&nbsp;</span>
+        <span class="blast" style="opacity: 1;">E</span>
+        <span class="blast" style="opacity: 1;">x</span>
+        <span class="blast" style="opacity: 1;">p</span>
+        <span class="blast" style="opacity: 1;">e</span>
+        <span class="blast" style="opacity: 1;">r</span>
+        <span class="blast" style="opacity: 1;">i</span>
+        <span class="blast" style="opacity: 1;">e</span>
+        <span class="blast" style="opacity: 1;">n</span>
+        <span class="blast" style="opacity: 1;">c</span>
+        <span class="blast" style="opacity: 1;">e</span>
+      </h2>
         <div class="border"></div>
       </div>
         <template v-for="(work, index) in works">
@@ -83,7 +99,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+$primary-color: #08fdd8;
 
 .section-experience {
   padding: 2rem;
@@ -92,6 +110,7 @@ export default {
   margin: 1rem 0;
   text-align: left;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .border {
@@ -99,5 +118,55 @@ export default {
   height: 2px;
   border-radius: 20px;
   margin-top: 8px;
+}
+
+.blast {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.blast:hover {
+    color: $primary-color;
+    animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
 }
 </style>
