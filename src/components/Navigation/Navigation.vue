@@ -81,7 +81,7 @@ $navigation-color: #202026;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   &__header {
     &--tag {
@@ -94,9 +94,11 @@ $navigation-color: #202026;
 }
 
 .navigation__list {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: space-between;
+  // display: flex; 
+  // flex-direction: column; 
+  // justify-content: space-between;
+  margin-bottom: auto;
+  margin-top: 2rem;
   &--nav {
     display: flex;
     flex-direction: column;

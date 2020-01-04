@@ -38,6 +38,7 @@ export default {
 <style lang="scss" scoped>
 .social-media {
   list-style-type: none;
+  margin-bottom: 4rem;
 
   &__item {
     font-family: FontAwesome;

@@ -163,4 +163,10 @@ a {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
 }
+
+@media only screen and (max-width: 600px) {
+  .header_buttons {
+    flex-direction: column;
+  }
+}
 </style>
