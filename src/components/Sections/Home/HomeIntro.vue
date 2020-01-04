@@ -1,18 +1,15 @@
 <template>
   <div class="header__heading-box--about">
     <div class="header__post--text">
-      <h4>Summary</h4>Hi! 👋 I am a Front-end Engineer with knowledge of UX design principles and experience in building software and web applications for more than 3 years.
-      I enjoy creating simple, clean and creative user interfaces using the latest web technologies.
+      <h4>Summary</h4>
+
+      <p> Hi! 👋 I am a Front-end Engineer with knowledge of UX design principles.
+      I like creating simple, clean and creative user interfaces using the latest web technologies.
       I specialize in JavaScript and have professional experience working with Angular 2+ and Vue.js.
-      I graduated with a M.Sc. in Information Systems and HCI from
-      <a
-        href="https://www.csd.uoc.gr/"
-      >University of Crete</a>.
-      I'm currently working as a Frontend developer in
-      <a href="https://www.yabbu.com/">Yabbu</a>.
-      <br />
-      <br>
-When not working, I'm likely watching Superhero movies in cinema or series on Netflix, re-reading Neil Gaiman books, travelling the world or taking strolls with my camera!
+      I graduated with a M.Sc. in Information Systems and HCI from <a href="https://www.csd.uoc.gr/">University of Crete</a>.
+      I'm currently working as a Freelance Frontend developer &amp; Designer. Send me an <a href="mailto:barka.alexandra2@gmail.com">e-mail</a> for a FREE quote.
+      </p>
+      <p>When not working, I'm likely watching series on Netflix, re-reading Neil Gaiman books, travelling the world or taking strolls with my camera!</p>
     </div>
     <div class="header_buttons">
       <router-link class="btn btn-seemore" to="/portfolio">Let's see some work!</router-link>
